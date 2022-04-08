@@ -4,7 +4,7 @@ import { Entry } from '../../interfaces';
 
 interface EntriesContextProps {
   entries: Entry[];
-  addNewEntry: (description: string) => void;
+  addNewEntry: (description: string) => Promise<void>;
   updateEntry: (entry: Entry) => void;
 }
 
